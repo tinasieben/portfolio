@@ -18,7 +18,7 @@
 
 ***User Story***:
 
-> AS A marketing agency ⇢ I WANT a codebase that follows accessibility standards ⇢ SO THAT our own site is optimized for search engines
+> AS AN employer ⇢ I WANT to view a potential employee's deployed portfolio of work samples ⇢ SO THAT I can review samples of their work and assess whether they're a good candidate for an open position
 
 ## Table of Contents
 
