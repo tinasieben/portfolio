@@ -10,46 +10,44 @@
 
   <body>
     <!-- navigation block -->
-    <header class="flex-row justify-space-between bg-light py-1 px-2">
-        <h1 class="text-light ml-1 display-inline-block">
-          <a class="mt-1 ml-5 pl-3 text-light tk-itc-avant-garde-gothic-pro" href="../portfolio/index.html">
-            CHRI<span class="tk-itc-avant-garde-gothic-pro-alt-capitals">ST</span>IN<span class="tk-itc-avant-garde-gothic-pro-alt-capital-a">A</span> SIEBEN</a>
-        </h1>
+    <header class="flex-row bg-light py-1 px-2">
+      <h1 class="text-light ml-1 display-inline-block">
+        <a class="text-light tk-itc-avant-garde-gothic-pro" href="../portfolio/index.html">
+          CHRI<span class="tk-itc-avant-garde-gothic-pro-alt-capitals">ST</span>IN<span class="tk-itc-avant-garde-gothic-pro-alt-capital-a">A</span> SIEBEN</a>
+      </h1>
 
-        <!-- navigation links -->
-        <nav class="mt-3 mx-4">
-          <ul class="tk-futura-pt-condensed flex-row justify-space-between align-center` mt-2 mr-4 px-3 pt-3">
-            <li>
-              <a class="mt-3 mr-3 px-3 pt-3 text-light" href="#about">About</a>
-            </li>
-            <li>
-            <li>
-              <a class="mt-3 mr-3 px-3 pt-3 text-light" href="#projects">Projects</a>
-            </li>
-            <li>
-              <a class="mt-3 mr-3 px-3 pt-3 text-light" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </nav>
+      <!-- navigation links -->
+      <nav class="mt-3 mx-4">
+        <ul class="tk-futura-pt-condensed flex-row justify-space-between align-center` mt-2 mr-4 px-3 pt-3">
+          <li>
+            <a class="mt-4 mr-3 px-3 pt-3 text-light" href="#about">About</a>
+          </li>
+          <li>
+          <li>
+            <a class="mt-4 mr-3 px-3 pt-3 text-light" href="#projects">Projects</a>
+          </li>
+          <li>
+            <a class="mt-4 mr-3 px-3 pt-3 text-light" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <!-- end navigation -->
 
     <!-- hero/jumbotron -->
-    <section class="hero">
-      <div class="hero-cta">
-        <h2> </h2>
-      </div>
+    <section class="hero flex-row">
+      <div class="hero-image"></div>
     </section>
 
     <!-- "about me" -->
     <section id="about">
-      <div class="about-container flex-row col-12 mt-3 p-3 mx-auto">
-        <h2 class="section-title primary-border col-1">ABOUT</h2>
-        <div class="image-container col-5 px-5">
-            <img class="about-image col-5" src="./assets/images/bio-photo.jpg" alt="Christina Sieben sitting and smiling on grass, laughing at the photographer." />
+      <div class="section-container justify-space-around flex-row col-12 mt-3 p-3 mx-auto">
+        <h2 class="section-title primary-border">ABOUT</h2>
+        <div class="image-container">
+            <img class="about-image" src="./assets/images/bio-photo.jpg" alt="Christina Sieben sitting and smiling on grass, laughing at the photographer." />
         </div>
-        <article class="about-content col-5 mr-5 ml-auto pr-5">
-          <div class="text-container">
+        <article class="about-content ml-auto">
+          <div class="text-container about-md about-tab about-sm">
             <h3>VISUAL ARTS RESUME:</h3>
             <p class="about-me">
               Recent Graduate of Hobart and William Smith Colleges<br/>
@@ -59,7 +57,7 @@
           </div>
           <div class="text-container art-courses mt-1 pt-2">
             <h4>Studio Courses:</h4>
-              <ul class="text-container art-courses">
+              <ul class="art-courses">
                 <li>
                   <p>Imaging Workshop, Spring 2020</p>
                 </li>
@@ -89,9 +87,9 @@
                 </li>
               </ul>
           </div>
-          <div class="text-container mt-1 pt-2">
+          <div class="text-container text-tab mt-1 pt-2">
             <h4>Pratt Pre-College,<br/>2014:</h4>
-            <ul class="text-container">
+            <ul class="text-container text-tab">
               <li>
                 <p>Introduction to Foundation Art</p>
               </li>
@@ -106,7 +104,7 @@
               </li>
             </ul>
           </div>
-          <div class="text-container mt-1 pt-2 mr-auto">
+          <div class="text-container mt-1 pt-2">
             <h4>Interdisciplinary:</h4>
             <ul class="text-container">
               <li>
@@ -123,15 +121,15 @@
               </li>
             </ul>
           </div>
-          <div class="text-container mt-1 pt-2 ml-3 mr-auto">
+          <div class="text-container hist-tab mt-1 pt-2 ml-3">
             <h4>Art History:</h4>
-            <ul class="text-container">
+            <ul class="text-container hist-tab">
               <li>
                 <p>Renaissance to Modern,<br/>Spring 2019</p>
               </li>
             </ul>
           </div>
-          <div class="text-container recognition mr-auto">
+          <div class="text-container recognition">
             <h4>Recognition &amp; Special Projects:</h4>
             <ul class="text-container recognition">
               <li>
@@ -147,136 +145,108 @@
           </div>
         </article>
       </div>
+    </section>
     <!-- end "about me" -->
 
     <!-- "projects" start -->
-    <section id="projects" class="">
-      <div class="about-container flex-row col-12 mt-3 p-3 mx-auto">
+    <section id="projects">
+      <div class="section-container flex-row col-12 mt-3 p-3">
         <h2 class="section-title primary-border col-1">PROJECTS</h2>
-        <article class="flex-row pro">
-          <div class="text-container col-12">
-            <a href="default.asp" class="portfolio-item-title text-light" target="_blank">Run Buddy</a>
-            <h4 class="portfolio-languages">
-              Built With:
-              HTML,CSS
-            </h4>
-            <p>lorem ipsum</p>
-            <a href="link" class="btn"><i class="fab fa-github mr-2"></i>View Project on GitHub</a>
+        <article class="projects flex-row col-10-25 mr-5">
+          <div class="gallery portfolio-item px-5">
+            <a target="_blank" href="https://tinasieben.github.io/run-buddy/">
+              <img src="assets/images/run-buddy.jpg" alt="Run Buddy Preview">
+              <div class="gallery-info my-2 py-2">
+                <h4 class="text-center">
+                  Run Buddy
+                </h4>
+                <p class="ml-2 pl-2">
+                  Built With:
+                  HTML, CSS
+                </p>
+              </div>
+            </a>
           </div>
-
-          <div class="text-container col-6">
-            <a href="default.asp" class="portfolio-item-title text-light" target="_blank">Run Buddy</a>
-            <h4 class="portfolio-languages">
-              Built With:
-              HTML,CSS
-            </h4>
-            <p>lorem ipsum</p>
-            <a href="link" class="btn"><i class="fab fa-github mr-2"></i>View Project on GitHub</a>
+          <div class="gallery portfolio-item col-6 px-5">
+            <a target="_blank" href="https://tinasieben.github.io/taskinator/">
+              <img src="assets/images/taskinator.jpg" alt="Taskinator Preview">
+              <div class="gallery-info my-2 py-2">
+                <h4 class="text-center">
+                  Taskinator
+                </h4>
+                <p class="ml-2 pl-2">
+                  Built With:
+                  HTML, CSS, JAVA
+                </p>
+              </div>
+            </a>
           </div>
-
-          <div class="text-container col-6">
-            <a href="default.asp" class="portfolio-item-title text-light" target="_blank">Run Buddy</a>
-            <h4 class="portfolio-languages">
-              Built With:
-              HTML,CSS
-            </h4>
-            <p>lorem ipsum</p>
-            <a href="link" class="btn"><i class="fab fa-github mr-2"></i>View Project on GitHub</a>
+          <div class="gallery portfolio-item col-6 px-5">
+            <a target="_blank" href="https://tinasieben.github.io/taskmaster-pro/">
+              <img src="assets/images/taskmaster-pro.jpg" alt="Taskmaster Pro Preview">
+              <div class="gallery-info my-2 py-2">
+                <h4 class="text-center">
+                  Taskmaster-pro
+                </h4>
+                <p class="ml-2 pl-2">
+                  Built With:
+                  HTML, CSS, JAVA
+                </p>
+              </div>
+            </a>
           </div>
-
-          <div class="text-container col-6">
-            <a href="default.asp" class="portfolio-item-title text-light" target="_blank">Run Buddy</a>
-            <h4 class="portfolio-languages">
-              Built With:
-              HTML,CSS
-            </h4>
-            <p>lorem ipsum</p>
-            <a href="link" class="btn"><i class="fab fa-github mr-2"></i>View Project on GitHub</a>
+          <div class="gallery portfolio-item col-6 px-5">
+            <a target="_blank" href="https://look-meup.herokuapp.com/">
+              <img src="assets/images/look-me-up.jpg" alt="Look Me Up Preview">
+              <div class="gallery-info my-2 py-2">
+                <h4 class="text-center">
+                  Look Me Up
+                </h4>
+                <p class="ml-2 pl-2">
+                  Built With:
+                  HTML, CSS, JAVA, MDBootstrap, mySQL, Heroku, Sequelize ORM, Handlebars.js, Node.js, and Express.js
+                </p>
+              </div>
+            </a>
           </div>
-
-          <div class="text-container col-6">
-            <a href="default.asp" class="portfolio-item-title text-light" target="_blank">Run Buddy</a>
-            <h4 class="portfolio-languages">
-              Built With:
-              HTML,CSS
-            </h4>
-            <p>lorem ipsum</p>
-            <a href="link" class="btn"><i class="fab fa-github mr-2"></i>View Project on GitHub</a>
+          <div class="gallery portfolio-item col-6 px-5">
+            <a target="_blank" href="https://pump-plunder.herokuapp.com/">
+              <img src="assets/images/pump-plunder.jpg" alt="Pump Plunder Preview">
+              <div class="gallery-info my-2 py-2">
+                <h4 class="text-center">
+                  Pump Plunder
+                </h4>
+                <p class="ml-2 pl-2">
+                  Built With:
+                  HTML, CSS, JAVA
+                </p>
+              </div>
+            </a>
           </div>
-
-
-
-
         </article>
-
-
-          <div class="col-12 col-md-6 mb-2 bg-dark text-light p-3 flex-column">
-            <h3 class="portfolio-item-title text-light">task</h3>
-            <h5 class="portfolio-languages">
-              Built With:
-
-            </h5>
-            <p>asdgasdfgfsdg</p>
-            <a href="dsagfd" class="btn mt-auto"><i class="fab fa-github mr-2"></i>View Project on GitHub</a>
-          </div>
-
       </div>
     </section>
-
-      </div>
-
-
-
-
-
-
     <!-- end "projects" -->
 
 
     <!-- "reach out" start -->
-    <section id="contact" class="contact">
-      <div class="flex-row">
-        <h2 class="secondary-border">
-          Contact
-        </h2>
-      </div>
+    <section id="contact">
+      <div class="section-container flex-row col-12 mt-3 p-3 mx-auto">
+        <h2 class="section-title primary-border col-1">CONTACT</h2>
+        <article class="contact-info flex-row col-10-25 mr-5">
+          <div class="contact-form ml-3 px-5">
+           <h3>Work with me!</h3>
+            <form>
+              <label for="contact-name">Your Name</label>
+              <input type="text" id="contact-name" placeholder="Your Name" />
 
-      <div class="contact-info">
-        <div>
-          <h3>Run Buddy</h3>
-          <p>
-            Any questions or concerns before signing up?
-            <br/>
-            Let us know and we'll be happy to talk to you!
-          </p>
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" placeholder="Message"></textarea>
 
-          <address>
-            55 Main Street <br/>
-            Some Town, Ca <br/>
-            12345<br/>
-            P: 555.RUN.BUDZ (555.786.2839)<br/>
-            E: <a href="mailto:info@runbuddy.io">info@runbuddy.io</a>
-          </address>
-
-        </div>
-
-        <div class="contact-form">
-          <h3>Contact Us</h3>
-          <form>
-            <label for="contact-name">Your Name</label>
-            <input type="text" id="contact-name" placeholder="Your Name" />
-
-            <label for="contact-message">Message</label>
-            <textarea id="contact-message" placeholder="Message"></textarea>
-
-            <button type="submit">Submit</button>
-          </form>
-        </div>
-
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12182.30520634488!2d-74.0652613!3d40.2407219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1561060983193!5m2!1sen!2sus"
-          frameborder="0" style="border:0" allowfullscreen>
-        </iframe>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </article>
       </div>
     </section>
     <!-- "reach out" end -->
