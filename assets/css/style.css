@@ -88,7 +88,7 @@ p {
   -webkit-font-feature-settings: "salt" 2;
   font-feature-settings: "salt" 2;
   font-weight: 300;
-
+  width: auto;
 }
 
 ul {
@@ -202,8 +202,8 @@ section {
 
 .subtitle {
   font-size: 2.25rem;
-  text-align: center;
-  width: max-content;
+  text-align: left;
+  width: 100%;
 }
 
 .primary-border {
@@ -363,27 +363,39 @@ section {
   padding-bottom: var(--spacing-two);
 }
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-}
-
-.dropdown-icons {
+.studio {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
+  align-self: stretch;
+  justify-content: flex-start;
+}
+
+.dropdown {
+  /* position: relative; */
+  display: inline-block;
+  width: auto;
+  height: 100%;
+  justify-content: space-between;
+  padding-right: var(--spacing-one);
+  padding-left: var(--spacing-three);
+  padding-bottom: var(--spacing-two);
+}
+
+.icons {
+  position: relative;
+  display: inline-flex;
   flex-wrap: nowrap;
   border: var(--spacing-one) solid var(--primary-alt);
   border-radius: 10px;
   align-items: baseline;
-  justify-content: flex-start;
+  justify-content: center;
   width: fit-content;
   height: auto;
   padding: var(--spacing-one) var(--spacing-two);
 }
 
-.DSLR {
+.icon-img {
   display: flex;
   flex-wrap: wrap;
   width: 1rem;
@@ -400,25 +412,30 @@ section {
 
 .dropdown-content {
   display: none;
-  background-color: #f9f9f9;
-  min-width: 160px;
+  position: absolute;
+  width: fit-content;
+  background-color: var(--secondary);
   box-shadow: 0px 8px 16px 0px var(--tertiary);
   padding: 12px 16px;
   z-index: 1;
 }
 
-.dropdown:hover .dropdown-content {
-  display: block;
 
+.dropdown:hover .dropdown-content {
+  display: block
 }
 
-.dropdown:hover .dropdown-icons {
+.dropdown:hover .icons {
   border-color: var(--accent-red);
   box-shadow:
-       inset 0 -3em 3em var(--tertiary),
-             0 0  0 var(--spacing-one) var(--accent-red),
-             0.3em 0.3em 1em var(--primary-alt);
+    inset 0 -3em 3em var(--tertiary),
+          0 0  0 var(--spacing-one) var(--accent-red),
+          0.3em 0.3em 1em var(--primary-alt);
+  justify-content: baseline;
+  overflow: hidden;
 }
+
+
 
 .pratt {
   display: flex;
