@@ -91,6 +91,16 @@ h4 {
   text-align:start;
 }
 
+h5 {
+  font-size: 2rem;
+  font-family: "futura-pt-condensed",sans-serif;
+  -webkit-font-feature-settings: "salt" 2;
+  font-feature-settings: "salt" 2;
+  font-weight: 300;
+  display: inline;
+  position: relative;
+}
+
 p {
   font-size: 2rem;
   font-family: "futura-pt-condensed",sans-serif;
@@ -98,6 +108,11 @@ p {
   font-feature-settings: "salt" 2;
   font-weight: 300;
   width: auto;
+}
+
+li > p > i {
+  padding-left: var(--spacing-two);
+  padding-right: var(--spacing-two);
 }
 
 ul {
@@ -114,6 +129,45 @@ a {
   letter-spacing: 0px;
   color: var(--light);
 }
+
+details {
+  font-size: 3.25rem;
+  font-family: "futura-pt-condensed",sans-serif;
+  -webkit-font-feature-settings: "salt" 2;
+  font-feature-settings: "salt" 2;
+  font-weight: 300;
+  text-align: start;
+  color: var(--dark);
+  word-break: break-word;
+  overflow-wrap: break-word;
+  width: auto;
+}
+
+details > summary {
+  display: list-item;
+  cursor: pointer;
+  list-style-image: url('../images/education.svg');
+  list-style-position: inside;
+}
+
+details[open] > p {
+  display: list-item;
+  margin-left: var(--spacing-five);
+  padding-left: .75rem;
+  list-style-image: url('../images/down-right-arrow.svg');
+}
+
+
+
+details[open] > summary,
+details:hover > summary > * {
+  color: var(--accent-red);
+  fill: var(--accent-red);
+}
+
+
+
+
 
 /* HEADER / NAV BAR STYLES START */
 
@@ -226,11 +280,21 @@ section {
 
 /* ABOUT */
 
+.minor,
 .resume {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
   justify-content: flex-start;
+}
+
+.minor p {
+  position: relative;
+  line-break: auto;
+  word-break: break-word;
+  width: 100%;
+  padding-left: var(--spacing-three);
+  justify-content: flex-start !important;
 }
 
 .resume ul {
@@ -253,6 +317,15 @@ section {
   flex-wrap: wrap-reverse;
   width: auto;
   height: 1.25rem;
+  justify-content: space-between;
+}
+
+.about-minor {
+  /* "Arrow icon" */
+  display: flex;
+  flex-wrap: wrap-reverse;
+  height: auto;
+  width: 1.25rem;
   justify-content: space-between;
 }
 
@@ -395,6 +468,37 @@ section {
   width: auto;
   line-height: 1.25;
   color: var(--dark);
+  place-items: start;
+  text-align: start;
+  overflow-wrap: break-word;
+}
+
+.nested-resume {
+  display: flex;
+  flex: 1 2 calc(100% * 5 / 12 - 0.5%);
+  flex-wrap: wrap;
+  color: var(--dark);
+  width: 100%;
+  height: auto;
+  row-gap: var(--spacing-three);
+  line-break: auto;
+  word-break: break-word;
+  object-fit: scale-down;
+  overflow-wrap: break-word;
+  align-content: space-around;
+  align-items: baseline;
+  justify-content: space-between;
+
+  padding-right: var(--spacing-one);
+  padding-left: var(--spacing-three);
+  padding-bottom: var(--spacing-two);
+}
+
+.nested-resume p {
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: auto;
+  line-height: 1.25;
   place-items: start;
   text-align: start;
   overflow-wrap: break-word;
