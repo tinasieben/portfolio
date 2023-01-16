@@ -41,36 +41,45 @@
 
     <!-- "about me" -->
     <section id="about">
-      <div class="section-container flex-row col-12 mt-3 pl-3 py-5">
+      <v class="section-container flex-row col-12 mt-3 pl-3 py-5">
         <h2 class="section-title primary-border">ABOUT</h2>
         <div class="image-container mr-auto">
           <img class="about-image" src="./assets/images/bio-photo.jpg" alt="Christina Sieben sitting and smiling on grass, laughing at the photographer." />
         </div>
         <article class="about-content">
-          <div class="flex-row text-box art-courses about-md about-tab about-sm">
+          <div class="text-box art-courses about-md about-tab about-sm">
             <h3>VISUAL ARTS RESUME:</h3>
-            <ul class="art-courses resume">
+            <ul class="art-courses">
               <div class="resume">
                 <img class="about-me" src="./assets/open-iconic/svg/person.svg" alt="Person icon">
                 <li>
-                  <p>
-                    Recent Graduate of Hobart and William Smith Colleges<br/>
-                    May, 2020
+                  <p>Recent 2020 graduate of Hobart and William Smith Colleges
+                    <span class="embed"> (Geneva, NY)</span>
                   </p>
                 </li>
               </div>
               <details id="major" dir="ltr">
                 <summary>
-                  <h5>B.A. in <i>Media and Society</i> - <i>New Media</i></h5>
-                  <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" class="mb-1" viewBox="0 0 8 8">
+                  <h5>B.A. in <i>Media and Society</i> - </h5>
+                  <span class="w-fit">
+                    <h5><i>New Media</i></h5>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" class="ml-svg mt-2" viewBox="0 0 8 8">
                       <path d="M0 0l4 4 4-4h-8z" transform="translate(0 2)" />
                     </svg>
                   </span>
                 </summary>
-                <p>President of <i>Nu Omega</i> Chapter of <i>Lambda Pi Eta</i> (National Communication Association Honor Society)</p>
+                  <p>Vice President of <i>Nu Omega</i> Chapter of
+                    <span class="w-fit align-baseline">
+                      <a href="https://www.natcom.org/student-organizations/lambda-pi-eta" style="font-size: 1.756rem; font-style:italic;">Lambda Pi Eta</a>
+                      ,
+                    </span>
+                    the National Communication Association's Honor Society
+                    <span class="embed align-baseline" style="font-size:1.25rem;">
+                      (<a href="https://www.achshonor.org/" style="font-style:italic; line-height:2.25rem" class="embed">Association of College Honor Societies</a>)
+                    </span>
+                  </p>
               </details>
-              <div class="minor">
+              <div class="resume">
                 <img class="about-minor" src="./assets/images/down-right-arrow.svg">
                 <ul id="minor">
                   <li>
@@ -79,7 +88,7 @@
                 </ul>
               </div>
               <div class="resume">
-                <img class="about-based" src="./assets/open-iconic/svg/map-marker.svg" alt="Map-marker icon">
+                <img class="about-me" src="./assets/open-iconic/svg/map-marker.svg" alt="Map-marker icon">
                 <li>
                   <p>
                     Based in Oakland, CA<br/>
@@ -178,53 +187,52 @@
                   </ul>
                 </div>
               </div>
-                <!-- <img src="/open-iconic/svg/flash.svg">  -->
-              <div class="studio">
-                <div class="dropdown">
-                  <span class="icons">
-                    <img class="icon-img" src="./assets/images/pratt-logo.svg" alt="Art history icon">
-                    <h3 class="pratt-icon">PreCollege</h3>
-                    <img class="show-more ml-2" src="./assets/open-iconic/svg/caret-bottom.svg">
-                  </span>
-                  <div class="art-courses">
-                    <ul class="art-courses dropdown-content">
-                      <h4>Architectural Design Studio PreCollege Summer Program (2014):</h4>
-                      <li>
-                        <p>Introduction to Foundation Art</p>
-                      </li>
-                      <li>
-                        <p>Introduction to Architecture</p>
-                      </li>
-                      <li>
-                        <p>Pre-College Portfolio Development</p>
-                      </li>
-                      <li>
-                        <p>Pre-College Art History</p>
-                      </li>
-                    </ul>
-                  </div>
+              <div class="dropdown">
+                <span class="icons">
+                  <img class="icon-img" src="./assets/images/pratt-logo.svg" alt="Art history icon">
+                  <h3 class="pratt-icon">PreCollege</h3>
+                  <img class="show-more ml-2" src="./assets/open-iconic/svg/caret-bottom.svg">
+                </span>
+                <div class="art-courses">
+                  <ul class="art-courses dropdown-content">
+                    <h4>Architectural Design Studio PreCollege Summer Program (2014):</h4>
+                    <li>
+                      <p>Introduction to Foundation Art</p>
+                    </li>
+                    <li>
+                      <p>Introduction to Architecture</p>
+                    </li>
+                    <li>
+                      <p>Pre-College Portfolio Development</p>
+                    </li>
+                    <li>
+                      <p>Pre-College Art History</p>
+                    </li>
+                  </ul>
                 </div>
               </div>
-              <h4 class="subtitle mt-1 pt-2">Recognition &amp; Special Projects:</h4>
-              <div class="studio">
-                <ul class="art-courses resume pr-3">
-                  <div class="resume">
-                    <img class="about-me" src="./assets/open-iconic/svg/briefcase.svg" alt="Recognition & Special Projects icon">
-                    <li>
-                      <p class="pr-1">Internship</p>
-                      <a href="https://www2.hws.edu/internships/">spotlight</a>
-                      <span class="amp mx-1">&amp;</span>
-                      <a href="https://www2.hws.edu/sieben-20-lands-position-with-glp-films/">article</a>
-                    </li>
-                  </div>
-                  <div class="resume">
-                    <img class="about-based" src="./assets/images/canvas-painting.svg" alt="Recognition & Special Projects icon">
-                    <li>
-                      <p>Piedmont Middle School Green Team mural</p>
-                    </li>
-                  </div>
-                </ul>
-              </div>
+            </div>
+          </div>
+          <div class="text-box art-courses recognition">
+            <h4 class="subtitle mb-0">Recognition &amp; Special Projects:</h4>
+            <div class="studio">
+              <ul class="art-courses recognition pr-3">
+                <div class="resume">
+                  <img class="about-me" src="./assets/open-iconic/svg/briefcase.svg" alt="Recognition & Special Projects icon">
+                  <li>
+                    <p class="pr-1">Internship</p>
+                    <a href="https://www2.hws.edu/internships/">spotlight</a>
+                    <span class="amp mx-1">&amp;</span>
+                    <a href="https://www2.hws.edu/sieben-20-lands-position-with-glp-films/">article</a>
+                  </li>
+                </div>
+                <div class="resume">
+                  <img class="about-me" src="./assets/images/canvas-painting.svg" alt="Recognition & Special Projects icon">
+                  <li>
+                    <p>Piedmont Middle School Green Team mural</p>
+                  </li>
+                </div>
+              </ul>
             </div>
           </div>
         </article>
